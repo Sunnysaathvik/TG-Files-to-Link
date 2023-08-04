@@ -4,7 +4,7 @@
 FROM python:3.8
 
 # Set the working directory in the container
-WORKDIR /tutorial-env/filetolinkgenerator/app
+WORKDIR /tutorial-env/
 
 # Copy the application files into the working directory
 COPY . /tutorial-env/filetolinkgenerator/app
