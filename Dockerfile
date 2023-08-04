@@ -3,10 +3,10 @@
 FROM python:3.8
 
 # Set the working directory in the container
-WORKDIR /filetolinkgenerator
+WORKDIR /filetolinkgenerator/app
 
 # Copy the application files into the working directory
-COPY . /filetolinkgenerator
+COPY . /filetolinkgenerator/app
 
 # Install the application dependencies
 RUN pip install --no-cache-dir -r requirements.txt
