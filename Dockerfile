@@ -18,4 +18,4 @@ CMD ["python", "setup.py", "runserver", "0.0.0.0:8000"]
 # The container was not becoming healthy because it was trying to expose
 # port 80 but the application was running on port 8000.
 # Therefore, we need to change the exposed port to 8000.
-EXPOSE 8000/tcp
+EXPOSE 443/tcp
