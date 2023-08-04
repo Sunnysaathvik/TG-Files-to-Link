@@ -1,4 +1,4 @@
-RUN python -m venv tutorial-env
+
 
 # Use the official Python image as the base image
 FROM python:3.8
@@ -12,6 +12,7 @@ COPY . /tutorial-env/filetolinkgenerator/app
 # Install the application dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 RUN pip install --upgrade pip
+RUN python -m venv tutorial-env
 
 # Define the entry point for the container
 CMD ["python", "setup.py", "runserver", "0.0.0.0:8000"]
