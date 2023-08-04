@@ -10,7 +10,7 @@ COPY . /filetolinkgenerator/app
 
 # Install the application dependencies
 RUN pip install --no-cache-dir -r requirements.txt
-run pip install --upgrade pip
+RUN pip install --upgrade pip
 
 # Define the entry point for the container
 CMD ["python", "setup.py", "runserver", "0.0.0.0:8000"]
